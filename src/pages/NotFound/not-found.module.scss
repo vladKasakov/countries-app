@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+
+    .tohome {
+      font-size: 0.875rem;
+      line-height: 2;
+      font-weight: var(--fw-bold);
+      text-decoration: none;
+      color: var(--clr-text);
+      background-color: var(--clr-base-ui);
+      border: none;
+      outline: none;
+      box-shadow: var(--shadow);
+      border-radius: var(--radii);
+      padding: 0.5rem 1rem;
+    }
+  }
+}

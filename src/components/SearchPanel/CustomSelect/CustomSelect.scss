@@ -1,0 +1,68 @@
+.custom-select {
+  &-container {
+    width: 13em;
+  }
+
+  &__control {
+    transition: none !important;
+    cursor: pointer !important;
+    line-height: 3 !important;
+    border: none !important;
+    background-color: var(--clr-base-ui) !important;
+    color: var(--clr-text) !important;
+    box-shadow: var(--shadow) !important;
+
+    &--has-value {
+      color: var(--clr-text) !important;
+    }
+  }
+
+  &__placeholder {
+    margin-left: 1rem !important;
+    color: var(--clr-text) !important;
+  }
+
+  &__single-value {
+    padding-left: 1rem !important;
+    color: var(--clr-text) !important;
+  }
+
+  &__value-container {
+    color: var(--clr-text) !important;
+  }
+
+  &__indicator-separator {
+    display: none !important;
+  }
+
+  &__menu {
+    background-color: var(--clr-base-ui) !important;
+    box-shadow: var(--shadow) !important;
+  }
+
+  &__option {
+    cursor: pointer !important;
+    padding-left: 1rem !important;
+
+    &--is-focused {
+      background-color: var(--clr-select-focus) !important;
+    }
+
+    &--is-selected {
+      background-color: var(--clr-selected) !important;
+      color: var(--clr-text) !important;
+    }
+  }
+
+  &__indicator {
+    color: var(--clr-text) !important;
+  }
+
+  &__dropdown-indicator {
+    transition: none !important;
+  }
+
+  &__clear-indicator {
+    transition: none !important;
+  }
+}

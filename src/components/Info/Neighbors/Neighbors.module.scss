@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 3rem;
+
+  .neighbors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+
+    .link {
+      background-color: var(--clr-base-ui);
+      color: var(--clr-text);
+      border-radius: var(--radii);
+      box-shadow: var(--shadow);
+      padding: 0.5em 1em;
+      text-decoration: none;
+    }
+  }
+}

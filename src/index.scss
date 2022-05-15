@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --fw-light: 300;
+  --fw-normal: 600;
+  --fw-bold: 800;
+  --radii: 5px;
+  --shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.15), 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: var(--fw-light);
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
+  min-width: 230px;
+}
+
+body[data-theme='light'] {
+  --clr-bg: hsl(0, 0%, 98%);
+  --clr-base-ui: hsl(0, 0%, 100%);
+  --clr-text: hsl(200, 15%, 8%);
+  --clr-input: hsl(0, 0%, 52%);
+  --clr-select-focus: hsl(0, 0%, 90%);
+  --clr-selected: hsl(0, 0%, 95%);
+}
+body[data-theme='dark'] {
+  --clr-bg: hsl(207, 26%, 17%);
+  --clr-base-ui: hsl(209, 23%, 22%);
+  --clr-text: hsl(0, 0%, 100%);
+  --clr-input: hsl(0, 0%, 100%);
+  --clr-select-focus: hsl(209, 23%, 32%);
+  --clr-selected: hsl(209, 23%, 27%);
+}
+
+/* Hide scrollbar */
+body::-webkit-scrollbar {
+  display: none;
+}
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Remove basic clear button on all search fields */
+input[type='text']::-ms-clear,
+input[type='text']::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}
