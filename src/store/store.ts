@@ -1,11 +1,11 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 
 import { countryApi } from '../services/countries';
-import countryReducer from './reducers/countrySlice';
+import themeReducer from './reducers/themeSlice';
 
 const rootReducer = combineReducers({
   [countryApi.reducerPath]: countryApi.reducer,
-  countries: countryReducer,
+  theme: themeReducer,
 });
 
 export const store = configureStore({

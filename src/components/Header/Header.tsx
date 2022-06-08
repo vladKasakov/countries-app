@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 
 import { useAppDispatch, useAppSelect } from '../../hooks/redux';
 import { Theme } from '../../models';
-import { setTheme, toggleTheme } from '../../store/reducers/countrySlice';
+import { setTheme, toggleTheme } from '../../store/reducers/themeSlice';
 import Container from '../UI/Container/Container';
 import styles from './Header.module.scss';
 
 const Header = () => {
-  const theme = useAppSelect((state) => state.countries.theme);
+  const theme = useAppSelect((state) => state.theme);
   const dispatch = useAppDispatch();
 
   const toggleAppTheme = () => {
